@@ -1,0 +1,15 @@
+{
+  "name": "easyauth-next-auth",
+  "version": "1.0.0",
+  "description": "EasyAuth provider for NextAuth",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}

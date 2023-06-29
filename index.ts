@@ -1,10 +1,11 @@
 interface optionsConfig {
-  clientId?: string;
-  clientSecret?: string;
-  tenantURL?: string;
+  clientId?: string
+  clientSecret?: string
+  tenantURL: string
 }
 
-export default function EasyAuth(options: optionsConfig) {
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export default function EasyAuth (options: optionsConfig) {
   return {
     id: "easyauth",
     name: "easyauth",
@@ -20,12 +21,12 @@ export default function EasyAuth(options: optionsConfig) {
     authorization: {
       params: {scope: "openid"},
     },
-    profile(profile: any) {
+    profile (profile: any) {
       return {
         id: profile.sub,
-        email: profile.sub,
-      };
+        email: profile.sub
+      }
     },
-    options,
-  };
+    options
+  }
 }

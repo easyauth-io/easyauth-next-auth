@@ -1,6 +1,6 @@
 {
   "name": "easyauth-next-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EasyAuth provider for NextAuth",
   "main": "dist/index.js",
   "scripts": {
